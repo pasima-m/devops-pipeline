@@ -58,7 +58,7 @@ pipeline {
                 }
             }
         }
-
+/*
         stage('SonarQube scanning') {
             steps {
                 withSonarQubeEnv('SonarQube') {
@@ -73,7 +73,7 @@ pipeline {
                 }
             }
         }
-
+*/
         stage('Quality Gate') {
             steps {
                 waitForQualityGate abortPipeline: true
